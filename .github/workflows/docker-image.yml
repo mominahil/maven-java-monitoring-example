@@ -12,6 +12,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t mominahil/python-auth-example .
+          docker build -t mominahil/maven-java-monitoring-example .
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push mominahil/python-auth-example
+          docker push mominahil/maven-java-monitoring-example
